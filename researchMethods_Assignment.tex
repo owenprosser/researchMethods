@@ -9,6 +9,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage[belowskip=-15pt,aboveskip=0pt]{caption}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -37,7 +38,9 @@ developed, developing, suicide
 \section{Introduction}
 Life is very diffent in any of the different countries on Earth. One's country of Birth or Country of residence
 has a huge impact on all aspects of one's life. This paper investigates the existance of a link between
-the standard of living of a country and it's rate of suicide.
+the standard of living of a country and it's rate of suicide.Previosuly there has been little consensus on the issue
+with 45\% of research finding a significant relationship between socio-economic factors and suicide rate, and 55\%
+finding no relationship at all\cite{sui_systematic_review}.
 
 \subsection{Motivation}
 To discover if there is any link between Living Standards and Suicide rate which would be useful in aiding further
@@ -77,13 +80,38 @@ In this case the studied countries were classified based on their HDI value in 2
 Linear regression has been used to investigate similar hypothesis, Chang et al used the teqnique to investigate a 
 correlation between a rising suicide rate and the Southeast Asian economic downturn of 1997 \cite{SEAsia_sui}.
 Linear Regressions are used to analyse the multi-variate dataset. A liner regression is a technique used to demonstrate the relationship between two scaler variables \cite{stats_models_book}. 
-In this case it was used to ``examine the relationship between suicide rates, the economic crisis and other socio- economic variables''\cite{SEAsia_sui}.
-
-
+In this case it was used to ``examine the relationship between suicide rates, the economic crisis and other socio-economic variables''\cite{SEAsia_sui}.
 
 \section{Methodology}
+The dataset was imported in full into SPSS. The first step was to remove the data which was not relevant to testing this hypothesis.
 
 \section{Results}
+
+\begin{table}[ht]
+    \centering
+    \caption{Descriptive Statistics}
+    \begin{tabular}{| l | l | lll |}
+    \hline
+     Brazil&  Mean&  &  0.000065&   \\
+     &  95\% confidence Interval&  Upper Bound&  0.000103&   \\
+     &  &  Lower Bound&  0.000026&   \\\hline
+     Chile&  Mean&  &  0.000123&   \\
+     &  95\% confidence Interval&  Upper Bound&  0.000201&   \\
+     &  &  Lower Bound&  0.000046&   \\\hline
+     Netherlands&  Mean&  &  0.000106&   \\
+     &  95\% confidence Interval&  Upper Bound& 0.000158&   \\
+     &  &  Lower Bound&  0.000054&   \\\hline
+     Norway&  Mean&  &  0.000114&   \\
+     &  95\% confidence Interval&  Upper Bound&  0.000161&   \\
+     &  &  Lower Bound&  0.000066&   \\\hline
+     Russia&  Mean&  &  0.000197&   \\
+     &  95\% confidence Interval&  Upper Bound&  0.000320&   \\
+     &  &  Lower Bound&  0.000075&   \\\hline
+     Sweden&  Mean&  &  0.000124&   \\
+     &  95\% confidence Interval&  Upper Bound&  0.000188&   \\
+     &  &  Lower Bound&  0.000061& \\\hline
+    \end{tabular}
+    \end{table}
 
 \section{Conclusion}
 
@@ -91,6 +119,7 @@ In this case it was used to ``examine the relationship between suicide rates, th
 
 \begin{thebibliography}{00}
 %\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+\bibitem{sui_systematic_review}Iemmi, Valentina, Jason Bantjes, Ernestina Coast, Kerrie Channer, Tiziana Leone, David McDaid, Alexis Palfreyman, Bevan Stephens, and Crick Lund. "Suicide and poverty in low-income and middle-income countries: a systematic review." The Lancet Psychiatry 3, no. 8 (2016): 774-783.
 \bibitem{Suicides_2008-10} Barr, B., Taylor-Robinson, D., Scott-Samuel, A., McKee, M. and Stuckler, D., "Suicides associated with the 2008-10 economic recession in England: time trend analysis". Bmj, 345, p.e5142, 2012..
 \bibitem{high_standard_living} M. Smith, ``The 19 countries with the highest standard of life'', Business Insider. New York, 2016.
 \bibitem{sui_low_income} Iemmi, Valentina, Jason Bantjes, Ernestina Coast, Kerrie Channer, Tiziana Leone, David McDaid, Alexis Palfreyman, Bevan Stephens, and Crick Lund. "Suicide and poverty in low-income and middle-income countries: a systematic review." The Lancet Psychiatry 3, no. 8 (2016): 774-783.
