@@ -9,6 +9,12 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\lfoot{Does a higher quality of living contribute to a lower suicide rate?}
+\cfoot{}
+\rfoot{\thepage}
 \usepackage[belowskip=-15pt,aboveskip=0pt]{caption}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -65,7 +71,7 @@ The Histogram in Figure 1 shows that there is some correlation between the stand
 The two highest values of suicide per-capita are associated with two of the counties with the lowest standard of living.
 This can justify further study into the hypothesis.
 \newline
-    \begin{figure}[ht]
+    \begin{figure}[b]
         \centering
         \includegraphics[width=0.4\textwidth]{percapita_bar}
         \caption{Histogram of the per-capita suicide rate of six countries.}
@@ -96,11 +102,16 @@ The rows which were removed were those that the `Country' field did not match an
 Then the task was to find which types of statistical tests would be the most useful and appplicable to the dataset in question.
 To do this it was necessary to establish if the data in the dataset was parametric or non-parametric.
 This is done by looking at the distrobution of the data. If the data follows a normal distrobution is it parametric, otherwise it is non-parametric.
+This result affects the statistical tests that can be applied to the dataset.
 In this case the data is right-skewed this can been seen in Fig 2. This means that the data is non-parametric.
 
-Due to the non-parametric nature of the data a Spearman's correlation was used.
+In this case the country variable is ordinal data as the countries are ranked in order of the expected standard of living in each (as covered in the `Research Hypothesis' subsection).
+As the country information in the dataset contained the country names (strings) they needed to be processed before the data could be analysed in SPSS as it will only accept integer data for the anaysis.
+The countries were ranked from one to six based on thier relative standard of living from the Social Progress Index.
 
-    \begin{figure}[h]
+Spearman's Correlation was used 
+
+    \begin{figure}[b]
         \centering
         \includegraphics[width=0.45\textwidth]{skewed}
         \caption{The distrobution of data in the dataset.}
@@ -109,6 +120,12 @@ Due to the non-parametric nature of the data a Spearman's correlation was used.
 \section{Results}
 The results of the analysis showed...
 \newline
+
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.45\textwidth]{spearmans}
+    \caption{The results of the Spearman's Correlation.}
+\end{figure}
 
 \begin{table}[ht]
     \centering
