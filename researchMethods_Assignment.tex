@@ -28,7 +28,7 @@ Lincoln, United Kingdom \\
 \maketitle
 
 \begin{abstract}
-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat felis nibh, id condimentum risus condimentum et. Sed id orci nec arcu convallis posuere. Aliquam orci arcu, viverra in posuere ac, luctus vitae nulla. Vivamus vitae consectetur sapien. Vivamus sodales id nisl lacinia imperdiet. Aenean fringilla massa dolor, id malesuada.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -64,7 +64,7 @@ The three lowest in the dataset are, Russia, Chile and Brazil.
 The Histogram in Figure 1 shows that there is some correlation between the standard of living and the suiicde rate.
 The two highest values of suicide per-capita are associated with two of the counties with the lowest standard of living.
 This can justify further study into the hypothesis.
-
+\newline
     \begin{figure}[ht]
         \centering
         \includegraphics[width=0.4\textwidth]{percapita_bar}
@@ -82,11 +82,29 @@ correlation between a rising suicide rate and the Southeast Asian economic downt
 Linear Regressions are used to analyse the multi-variate dataset. A liner regression is a technique used to demonstrate the relationship between two scaler variables \cite{stats_models_book}. 
 In this case it was used to ``examine the relationship between suicide rates, the economic crisis and other socio-economic variables''\cite{SEAsia_sui}.
 
+One paper investigating a similar hypothesis used a Spearman Correlation to investigate a connection between suicide and gun ownership in geographic areas.
+Spearman's correlation is a nonparametric measure which shows the relationship between two variables\cite{gun_sui}.
+The technique of analysis could be applied to this particular hypothesis as the Spearman's Correlation relies on two varibles of scale type or one scale and one ordinal.
+The varibles for this paper, Country and the per-capita suicide rate, are ordinal and scale allowing for this type of analysis to be conducted.
+
 \section{Methodology}
 The dataset was imported in full into SPSS. The first step was to remove the data which was not relevant to testing this hypothesis.
 This was done using the ``Select Cases'' function in SPSS which allows for rows of the dataset to be deleted if they do not match a specified condition.
 This left a subset of the initial dataset which contained the data for the countries to be analysed as explained in Research Hypothesis section.
 The rows which were removed were those that the `Country' field did not match any of the six counties focused on in this paper.
+
+Then the task was to find which types of statistical tests would be the most useful and appplicable to the dataset in question.
+To do this it was necessary to establish if the data in the dataset was parametric or non-parametric.
+This is done by looking at the distrobution of the data. If the data follows a normal distrobution is it parametric, otherwise it is non-parametric.
+In this case the data is right-skewed this can been seen in Fig 2. This means that the data is non-parametric.
+
+Due to the non-parametric nature of the data a Spearman's correlation was used.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.45\textwidth]{skewed}
+        \caption{The distrobution of data in the dataset.}
+    \end{figure}
 
 \section{Results}
 The results of the analysis showed...
@@ -131,6 +149,7 @@ The results of the analysis showed...
 \bibitem{Sui_in_developing} Vijayakumar, Lakshmi, et al. "Suicide in Developing Countries (1) Frequency, Distribution, and Association with Socioeconomic Indicators." Crisis 26.3 (2005): 104-111
 \bibitem{SEAsia_sui} Chang, Shu-Sen, David Gunnell, Jonathan AC Sterne, Tsung-Hsueh Lu, and Andrew TA Cheng. "Was the economic crisis 1997–1998 responsible for rising suicide rates in East/Southeast Asia? A time–trend analysis for Japan, Hong Kong, South Korea, Taiwan, Singapore and Thailand." Social science \& medicine 68, no. 7 (2009): 1322-1331.
 \bibitem{stats_models_book}Freedman, David A. Statistical models: theory and practice. Cambridge University Press, 2009.
+\bibitem{gun_sui}Kaplan, Mark S., and Olga Geling.``Firearm suicides and homicides in the United States: regional variations and patterns of gun ownership1." Social science \& medicine 46, no. 9 (1998): 1227-1233.
 \end{thebibliography}
 \vspace{12pt}
 
