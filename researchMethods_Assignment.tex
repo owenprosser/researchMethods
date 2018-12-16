@@ -99,6 +99,17 @@ This was done using the ``Select Cases'' function in SPSS which allows for rows 
 This left a subset of the initial dataset which contained the data for the countries to be analysed as explained in Research Hypothesis section.
 The rows which were removed were those that the `Country' field did not match any of the six counties focused on in this paper.
 
+The dataset need one more variable to be computed to allow for the testing of this hypothesis to be possible.
+The column containing the data on the number of instances of suicides in each particular country had be adjusted for the population.
+This resulted in the suicide per-capita which was then used to compare between the six different countries.
+This has now removed the factor of the vastly differing populations of each of the countries from making the results of this analysis meaningless.
+
+The descriptive statistics were then used to see if there seemed to be any basic link between the countries and thier suicide rate.
+A simple histogram was plotted with the suicides per-capita on the `y' axis and the countries on the `x' axis.
+This can be seen in Fig 1.
+This appears to show that there is some link between the countries with a lower standard of living and a higher suicides per-capita as
+Russia and Chile, two of the low standard of living counties, have the two highest numbers of suicides per-capita.
+
 Then the task was to find which types of statistical tests would be the most useful and appplicable to the dataset in question.
 To do this it was necessary to establish if the data in the dataset was parametric or non-parametric.
 This is done by looking at the distrobution of the data. If the data follows a normal distrobution is it parametric, otherwise it is non-parametric.
@@ -111,21 +122,24 @@ The countries were ranked from one to six based on thier relative standard of li
 
 Spearman's Correlation was used to investigate if there is a link between these two variables in this dataset.
 
-    \begin{figure}[b]
+    \begin{figure}[t]
         \centering
         \includegraphics[width=0.45\textwidth]{skewed}
         \caption{The distrobution of data in the dataset.}
     \end{figure}
 
 \section{Results}
-The results of the analysis showed The results of the analysis showed The results of the analysis showed
-\newline
+\subsection{Descriptive Statistics}
+The results of the initial histogram were that there was some correlation between the standard of living and the suicides per-capita.
+In Fig 1 it is shown that the countries with the highest median value of suicide per-capita are Chile and Russia which are also the two counties with the lowest standard of living.
+This could suggest that there is a possible link between the two factors.
+\subsection{Spearman's Correlation}
 
-\begin{figure}[b]
+\begin{table}[b]
     \centering
     \includegraphics[width=0.45\textwidth]{spearmans}
     \caption{The results of the Spearman's Correlation.}
-\end{figure}
+\end{table}
 
 \begin{table}[ht]
     \centering
