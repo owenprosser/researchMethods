@@ -16,6 +16,10 @@
 \cfoot{}
 \rfoot{\thepage}
 \usepackage[belowskip=-15pt,aboveskip=0pt]{caption}
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -34,7 +38,11 @@ Lincoln, United Kingdom \\
 \maketitle
 
 \begin{abstract}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat felis nibh, id condimentum risus condimentum et. Sed id orci nec arcu convallis posuere. Aliquam orci arcu, viverra in posuere ac, luctus vitae nulla. Vivamus vitae consectetur sapien. Vivamus sodales id nisl lacinia imperdiet. Aenean fringilla massa dolor, id malesuada.
+This paper aims to investigate if there is any link between the quality of living inside a country its suicide rate.
+
+This is done using inferentail statistics to analyse a dataset of many countries and their numbers of suicides, combined with data on the qaulity of living in each country.
+
+The findings are that the null hypothesis cannot be rejected due to the low correlation using Spearman's Rank Correlation.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -42,32 +50,32 @@ developed, developing, suicide
 \end{IEEEkeywords}
 
 \section{Introduction}
-Life is very diffent in any of the different countries on Earth. One's country of Birth or Country of residence
+Life is very diffent in any of the different countries on Earth. One's country of birth or country of residence
 has a huge impact on all aspects of one's life. This paper investigates the existance of a link between
-the standard of living of a country and it's rate of suicide.Previosuly there has been little consensus on the issue
+the standard of living of a country and it's rate of suicide. Previosuly there has been little consensus on the issue
 with 45\% of research finding a significant relationship between socio-economic factors and suicide rate, and 55\%
 finding no relationship at all\cite{sui_systematic_review}.
 
 \subsection{Motivation}
-To discover if there is any link between Living Standards and Suicide rate which would be useful in aiding further
-research into the other, more specific, causes. It has been shown that current state of the economy
-has an impact on the suice rate when compared with historical data \cite{Suicides_2008-10}. This could result in more effective action being taken to combat this
-issue and potentailly reduce the number suicides.
+The motivation behind this paper is to discover if there is any link between Living Standards and Suicide rate which would be useful in aiding further
+research into other, more specific, causes. It has been shown that current state of the economy
+has an impact on the suice rate when compared with historical data on suicide rates\cite{Suicides_2008-10}. This could result in more effective action being taken to combat this
+issue and potentailly reduce the number suicides globally.
 
 \subsection{Choice of Dataset}
-The dataset for this paper was selected as it contained a wide set of detailed data on the subject.
-It contains the data for around 117 countries from all over the globe and from all areas of the wealth and quality of living spectrum.
+The dataset for this paper was selected as it contained a wide set of detailed data on the subject of international suicide statistics.
+It contains data for around 117 countries from all over the globe and from all areas of the wealth and quality of living spectrum.
 The dataset is also provided by a reliable source, the World Health Organisation (WHO).
 
 \subsection{Research Hypothesis}
 The Hypothesis for this paper was established by firstly analysing the dataset using descriptive statistics.
 A total of six countries were selected for this paper with three on each end of the quality of living spectrum.
-The top tree countries were selected based on the highest ``Social Progress Index’’ values of those countries contained within this dataset.
-The ``Social Progress Index'' is based on three components, Basic Human Needs, Foundations of Wellbeing, and Opportunity\cite{high_standard_living}.
+The top tree countries were selected based on the highest Social Progress Index values of those countries contained within this dataset.
+The Social Progress Index is based on three components, Basic Human Needs, Foundations of Wellbeing, and Opportunity\cite{high_standard_living}.
 These are the Scandinavian countries, Sweden, Norway and the Netherlands.
 The three lowest in the dataset are, Russia, Chile and Brazil.
 
-The Histogram in Figure 1 shows that there is some correlation between the standard of living and the suiicde rate.
+The Histogram in Figure 1 shows that there is some correlation between the standard of living and the suicide rate.
 The two highest values of suicide per-capita are associated with two of the counties with the lowest standard of living.
 This can justify further study into the hypothesis.
 \newline
@@ -98,13 +106,14 @@ The dataset was imported in full into SPSS. The first step was to remove the dat
 This was done using the ``Select Cases'' function in SPSS which allows for rows of the dataset to be deleted if they do not match a specified condition.
 This left a subset of the initial dataset which contained the data for the countries to be analysed as explained in Research Hypothesis section.
 The rows which were removed were those that the `Country' field did not match any of the six counties focused on in this paper.
+These six countries were selected for analysis based on their associated Social Progress Index value. The top three and bottom three counties were the ones that were kept for analysis.
 
-The dataset need one more variable to be computed to allow for the testing of this hypothesis to be possible.
+The dataset needed one more variable to be computed to allow for the testing of this hypothesis to be possible.
 The column containing the data on the number of instances of suicides in each particular country had be adjusted for the population.
 This resulted in the suicide per-capita which was then used to compare between the six different countries.
-This has now removed the factor of the vastly differing populations of each of the countries from making the results of this analysis meaningless.
+This removed the factor of the vastly differing populations of each of the countries from affecting the results of this analysis.
 
-The descriptive statistics were then used to see if there seemed to be any basic link between the countries and thier suicide rate.
+The descriptive statistics were then used to see if there seemed to be any basic link between the countries and their suicide rate.
 A simple histogram was plotted with the suicides per-capita on the `y' axis and the countries on the `x' axis.
 This can be seen in Fig 1.
 This appears to show that there is some link between the countries with a lower standard of living and a higher suicides per-capita as
@@ -118,7 +127,7 @@ In this case the data is right-skewed this can been seen in Fig 2. This means th
 
 In this case the country variable is ordinal data as the countries are ranked in order of the expected standard of living in each (as covered in the `Research Hypothesis' subsection).
 As the country information in the dataset contained the country names (strings) they needed to be processed before the data could be analysed in SPSS as it will only accept integer data for the anaysis.
-The countries were ranked from one to six based on thier relative standard of living from the Social Progress Index.
+The countries were ranked from one to six based on their relative standard of living from the Social Progress Index.
 
 Spearman's Correlation was used to investigate if there is a link between these two variables in this dataset.
 
@@ -132,8 +141,20 @@ Spearman's Correlation was used to investigate if there is a link between these 
 \subsection{Descriptive Statistics}
 The results of the initial histogram were that there was some correlation between the standard of living and the suicides per-capita.
 In Fig 1 it is shown that the countries with the highest median value of suicide per-capita are Chile and Russia which are also the two counties with the lowest standard of living.
-This could suggest that there is a possible link between the two factors.
+This could suggest that there is a possible link between the two factors. 
+The distrobution of the data was found to be right-skewed this is shown in Fig 2.
+
+The confidence intervals were also computed.
+These also show that the highest values of suicide per-capita are in the countries of Russia and Chile.
+The full set of results is shown in Table II.
+
 \subsection{Spearman's Correlation}
+The results of the Spearman's Correlation were that there was a Correlation Coefficient of -0.046.
+This low result for the Correlation Coefficient suggest that there was very weak correlation between the two factors.
+The full output of this analysis from SPSS is shown in Table I.
+The significance figure resulting from the Spearman's Correlation analysis in SPSS is very high at 0.7.
+This high result suggests that there is little or no correlation between the two factors.
+This means that the null hypothesis cannot be rejected.
 
 \begin{table}[b]
     \centering
@@ -168,8 +189,26 @@ This could suggest that there is a possible link between the two factors.
     \end{table}
 
 \section{Conclusion}
+The hypothesis and focus of this paper ``Does a higher quality of living contribute to a lower suicide rate?'' cannot be confirmed as
+it has been shown that there is little correlation in both the Spearman's correlation and in the statistical significance.
+This could be the result of many combined factors.
+
+This paper has used a small sample size of countries, only six in this case. This would have been a contributing factor limiting the reliabilty of any result.
+More countries would have had to be included in the analysis for a more meaningful result to be concluded.
+
+The way in which this paper ranks the six studied countries according to their standard of living could be flawed.
+This was done by ranking the countries in the dataset by their Social Progress Index value. 
+This method assumes that the countries with the highest Social Progress Index have the highest standard of living, which may not be the case.
+
+There are innumerable factors, in additin to quality of living, which could influence the suicide rate of a given country.
+None of these have been taken into account in this case. These could include the healthcare systems in place, access to education, social and cultural influences to name a few examples.
 
 \subsection{Future Work}
+A further study could analyse the data for a much wider range of countries to increase the sample size.
+The different factors which can effect the suicide rate could also be studied to see what effect they have to the per-capita suicide rate.
+This could then be used to see if the same countries appear to have the highest suicide rates when based on many different factors.
+This could help identify if there is a correlation between a set of counties and their suicide rates or if there is no correlation at all.
+This data could be helpful to identify ways to lower the rate in the places identified. 
 
 \begin{thebibliography}{00}
 %\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
